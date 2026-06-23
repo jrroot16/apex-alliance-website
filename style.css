@@ -499,6 +499,10 @@ ul, ol {
 .hero__overlay {
   position: absolute;
   inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.hero--home .hero__overlay {
   background: rgba(0, 0, 0, 0.15);
 }
 
@@ -571,24 +575,47 @@ ul, ol {
 
 /* Page hero (subpages) */
 .hero--page {
-  min-height: 340px;
+  min-height: 400px;
   padding: 120px 0 60px;
   text-align: center;
+  justify-content: center;
 }
 
 .hero--page .hero__content {
-  max-width: 700px;
+  max-width: 500px;
   margin: 0 auto;
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(8px);
+  border-radius: 12px;
+  padding: 36px 32px;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2);
 }
 
 .hero--page .hero__title {
-  font-size: 2.75rem;
-  margin-bottom: 16px;
-  color: var(--white);
+  font-size: 2rem;
+  margin-bottom: 12px;
+  color: var(--navy);
 }
 
 .hero--page .hero__subtitle {
-  margin: 0 auto 20px;
+  margin: 0 auto 16px;
+  color: var(--text-secondary);
+}
+
+.hero--page .hero__label {
+  color: var(--orange);
+}
+
+.hero--page .hero__breadcrumb {
+  color: var(--text-secondary);
+}
+
+.hero--page .hero__breadcrumb a {
+  color: var(--navy);
+}
+
+.hero--page .hero__breadcrumb span {
+  color: var(--orange);
 }
 
 .hero__breadcrumb {
